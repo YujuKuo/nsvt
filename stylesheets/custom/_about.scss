@@ -1,0 +1,66 @@
+@import "_app.scss";
+
+#about {
+    background-color: $standardColor;
+    width: 100%;
+
+    .container {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .fontWrap {
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        @include mobile {
+            justify-content: start;
+        }
+    }
+}
+
+h2,
+h3,
+h4,
+p {
+    color: $white;
+    text-align: justify;
+}
+
+h2 {
+    margin-right: 12rem;
+    margin-bottom: 2rem;
+
+    @include mobile {
+        margin-top: 2rem;
+    }
+}
+
+h2,
+p {
+    @include mobile {
+        margin-right: 2rem;
+    }
+}
+
+h4 {
+    text-decoration: underline;
+    text-decoration-color: $white;
+
+    @include mobile {
+        font-size: newFontSize(1);
+    }
+}
+
+.aboutPic {
+    width: 165px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.picFont {
+    width: 340px;
+}

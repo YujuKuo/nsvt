@@ -1,0 +1,82 @@
+@import "_app.scss";
+
+header {
+    position: relative;
+    background-image: url("/stylesheets/images/cover-1.png");
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 625px;
+
+    @include pad {
+        background-position: 25% bottom;
+    }
+
+
+    @include mobile {
+        background-size: 300%;
+        background-repeat: no-repeat;
+    }
+
+
+    > div {
+        height: 60%;
+
+        @include mobile {
+            height: 75%;
+        }
+    }
+}
+
+.bannerFontWrap {
+    padding-right: 1rem;
+
+    @include mobile {
+        margin-right: 1rem !important;
+    }
+
+
+    h1,
+    h3 {
+        color: $standardColor;
+        text-align: justify;
+    }
+
+    h1 {
+        @include mobile {
+            font-size: newFontSize(1.5);
+        }
+    }
+
+    h2 {
+        @include mobile {
+            font-size: newFontSize(1);
+        }
+    }
+}
+
+.plane {
+    width: 30vw;
+    position: absolute;
+    top: 0;
+
+    @include padPro {
+        width: 40vw;
+    }
+
+
+    @include pad {
+        left: -10vw;
+    }
+
+
+    @include mobile {
+        width: 70%;
+        left: -20vw;
+    }
+
+
+    img {
+        width: 100%;
+    }
+}

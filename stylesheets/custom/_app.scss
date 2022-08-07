@@ -1,112 +1,141 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
 $white: white;
 $black: black;
-$blue: #008cd6;
-$green: #8DC457;
-$full : 100%;
+$standardColor: #008cd6;
+$secondaryColor: #8DC457;
 
 // $navbar-light-color: $white!important;
 // $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 
 // font
-$notoJP: 'Noto Sans JP', sans-serif;   
-$notoTC: 'Noto Sans TC', sans-serif;
+$notoJP: "Noto Sans JP", sans-serif;
+$notoTC: "Noto Sans TC", sans-serif;
 $baseFontSize: 16px;
-$baseLetterSpacing: .1rem;
-$bigLetterSpacing: .15rem;
+$baseLetterSpacing: 0.1rem;
+$bigLetterSpacing: 0.15rem;
 
 // Styles
 body {
-  font-family: $notoTC;
-  font-weight: normal;
+    font-family: $notoTC;
+    font-weight: normal;
 }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $notoTC;
-  font-weight: normal;
+    font-family: $notoTC;
+    font-weight: normal;
 }
+
 // font size
 @function newFontSize($size) {
-  @return $baseFontSize * $size;
+    @return $baseFontSize * $size;
 }
+
 h1 {
-  font-size: newFontSize(1.6);
-  letter-spacing: $bigLetterSpacing;
+    font-size: newFontSize(1.6);
+    letter-spacing: $bigLetterSpacing;
+    font-weight: bold;
 }
+
 h2 {
-  font-size: newFontSize(1.5);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1.5);
+    letter-spacing: $baseLetterSpacing;
 }
+
 h3 {
-  font-size: newFontSize(1.2);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1.2);
+    letter-spacing: $baseLetterSpacing;
 }
+
 h4 {
-  font-size: newFontSize(1.25);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1.25);
+    letter-spacing: $baseLetterSpacing;
 }
+
 h5 {
-  font-size: newFontSize(1.4);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1.4);
+    letter-spacing: $baseLetterSpacing;
 }
+
 h6 {
-  font-size: newFontSize(1.3);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1.3);
+    letter-spacing: $baseLetterSpacing;
 }
+
 p {
-  font-size: newFontSize(1);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(1);
+    letter-spacing: $baseLetterSpacing;
 }
+
 span {
-  font-size: newFontSize(0.95);
-  letter-spacing: $baseLetterSpacing;
+    font-size: newFontSize(0.95);
+    letter-spacing: $baseLetterSpacing;
 }
+
 // button
 $thumbBtnSize: 72px;
 $baseBtnSize: 60px;
 $fingerBtnSize: 45px;
 $mobileBtnSize: 42px;
+
 .button {
-  font-family: $notoTC;
-  font-weight: bold;
+    font-family: $notoTC;
+    font-weight: bold;
 }
+
+// sectionTitle
+.sectionTitle > h4 {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
 // rwd
-@mixin padPro{
-  @media(max-width:1024px){
-      @content;
-  }
-  };
-
-@mixin pad{
-@media(max-width:768px){
-  @content;
+@mixin padPro {
+    @media (max-width: 1024px) {
+        @content;
+    }
 }
-};
 
-@mixin mobile{
-@media(max-width:576px){
-  @content;
+@mixin pad {
+    @media (max-width: 768px) {
+        @content;
+    }
 }
-};
 
-header, section, footer, .container-fluid{
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin mini-mobile {
+    @media (max-width: 350px) {
+        @content;
+    }
+}
+
+header, section, footer, .container-fluid, col, row, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 .col-12, .col-md-9, .col-sm-8, .col-md-1, .col-10, .col-md-9 {
     border: 1px solid red;
     padding: 0;
     margin: 0;
 }
-button{
-  &:focus{
-    outline: none !important;
-  }
+
+button {
+    &:focus {
+        outline: none !important;
+    }
 }
+
 // padding space
 .container,
 .container-fluid,
-.container-xl{
-  padding: 0;
+.container-xl {
+    padding: 0;
 }
+
 // margin space
-.row{
-  margin: 0;
+.row {
+    margin: 0;
 }
