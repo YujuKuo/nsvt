@@ -1,0 +1,22 @@
+@import "_app.scss";
+
+#products {
+    & .container {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    & h5 {
+        margin-top: 2rem;
+    }
+}
+
+.productPic {
+    width: 100%;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
