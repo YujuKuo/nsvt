@@ -36,19 +36,19 @@ header {
     }
 
 
-    h1,
-    h3 {
+    & h1,
+    & h3 {
         color: $standardColor;
         text-align: justify;
     }
 
-    h1 {
+    & h1 {
         @include mobile {
             font-size: newFontSize(1.5);
         }
     }
 
-    h2 {
+    & h2 {
         @include mobile {
             font-size: newFontSize(1);
         }
@@ -76,7 +76,7 @@ header {
     }
 
 
-    img {
+    & img {
         width: 100%;
     }
 }

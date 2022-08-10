@@ -279,7 +279,7 @@ span {
   text-orientation: mixed;
 }
 
-header, section, footer, .container-fluid, col, row, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 .col-12, .col-md-9, .col-sm-8, .col-md-1, .col-10, .col-md-9 {
+header, section, footer, .container-fluid, col, .row {
   border: 1px solid red;
   padding: 0;
   margin: 0;
@@ -361,7 +361,7 @@ span {
   text-orientation: mixed;
 }
 
-header, section, footer, .container-fluid, col, row, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 .col-12, .col-md-9, .col-sm-8, .col-md-1, .col-10, .col-md-9 {
+header, section, footer, .container-fluid, col, .row {
   border: 1px solid red;
   padding: 0;
   margin: 0;
@@ -527,7 +527,7 @@ span {
   text-orientation: mixed;
 }
 
-header, section, footer, .container-fluid, col, row, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 .col-12, .col-md-9, .col-sm-8, .col-md-1, .col-10, .col-md-9 {
+header, section, footer, .container-fluid, col, .row {
   border: 1px solid red;
   padding: 0;
   margin: 0;
@@ -583,8 +583,7 @@ header > div {
     margin-right: 1rem !important;
   }
 }
-.bannerFontWrap h1,
-.bannerFontWrap h3 {
+.bannerFontWrap h1, .bannerFontWrap h3 {
   color: #008cd6;
   text-align: justify;
 }
@@ -686,7 +685,7 @@ span {
   text-orientation: mixed;
 }
 
-header, section, footer, .container-fluid, col, row, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 .col-12, .col-md-9, .col-sm-8, .col-md-1, .col-10, .col-md-9 {
+header, section, footer, .container-fluid, col, .row {
   border: 1px solid red;
   padding: 0;
   margin: 0;
@@ -714,60 +713,85 @@ button:focus {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-#about .fontWrap {
-  justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-@media (max-width: 576px) {
-  #about .fontWrap {
-    justify-content: start;
-  }
-}
-
-h2,
-h3,
-h4,
-p {
+#about h2, #about h3, #about h4, #about p {
   color: white;
   text-align: justify;
 }
-
-h2 {
+#about h2 {
   margin-right: 12rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 576px) {
-  h2 {
+  #about h2 {
     margin-top: 2rem;
   }
 }
-
-@media (max-width: 576px) {
-  h2,
-p {
-    margin-right: 2rem;
-  }
-}
-
-h4 {
+#about h4 {
   text-decoration: underline;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
 }
 @media (max-width: 576px) {
-  h4 {
+  #about h4 {
     font-size: 16px;
   }
 }
 
-.aboutPic {
-  width: 165px;
+.fontWrap {
+  justify-content: space-between;
+  margin: 4rem 1rem;
 }
-.aboutPic img {
-  width: 100%;
+@media (max-width: 576px) {
+  .fontWrap {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .fontWrap h2, .fontWrap p {
+    margin-right: 2rem;
+  }
 }
 
-.picFont {
-  width: 340px;
+.picCardsWrap {
+  margin-bottom: 4rem;
+}
+.picCardsWrap .card {
+  background-color: transparent;
+  border: 0;
+}
+@media (max-width: 576px) {
+  .picCardsWrap .card {
+    margin-top: 2rem;
+  }
+}
+.picCardsWrap img {
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .picCardsWrap img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}
+.picCardsWrap:nth-child(1) {
+  padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .picCardsWrap:nth-child(1) {
+    padding-right: 12px;
+  }
+}
+.picCardsWrap .card-body {
+  margin-left: 2rem;
+}
+@media (max-width: 576px) {
+  .picCardsWrap .card-body {
+    margin-left: 0;
+  }
+}
+.picCardsWrap .card-title {
+  color: white;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=all.css.map */

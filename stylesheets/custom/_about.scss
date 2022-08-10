@@ -4,63 +4,96 @@
     background-color: $standardColor;
     width: 100%;
 
-    .container {
+    & .container {
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
 
-    .fontWrap {
-        justify-content: space-between;
-        margin-left: 1rem;
-        margin-right: 1rem;
+    & h2,
+    & h3,
+    & h4,
+    & p {
+        color: $white;
+        text-align: justify;
+    }
+
+    & h2 {
+        margin-right: 12rem;
+        margin-bottom: 2rem;
 
         @include mobile {
-            justify-content: start;
+            margin-top: 2rem;
+        }
+    }
+
+    & h4 {
+        text-decoration: underline;
+        text-decoration-color: $white;
+
+        @include mobile {
+            font-size: newFontSize(1);
         }
     }
 }
 
-h2,
-h3,
-h4,
-p {
-    color: $white;
-    text-align: justify;
-}
-
-h2 {
-    margin-right: 12rem;
-    margin-bottom: 2rem;
+.fontWrap {
+    justify-content: space-between;
+    margin: 4rem 1rem;
 
     @include mobile {
-        margin-top: 2rem;
+        justify-content: start;
+        margin-bottom: 0;
+    }
+
+
+    & h2,
+    & p {
+        @include mobile {
+            margin-right: 2rem;
+        }
     }
 }
 
-h2,
-p {
-    @include mobile {
-        margin-right: 2rem;
+.picCardsWrap {
+    margin-bottom: 4rem;
+
+    & .card {
+        background-color: transparent;
+        border: 0;
+
+        @include mobile {
+            margin-top: 2rem;
+        }
     }
-}
 
-h4 {
-    text-decoration: underline;
-    text-decoration-color: $white;
-
-    @include mobile {
-        font-size: newFontSize(1);
-    }
-}
-
-.aboutPic {
-    width: 165px;
-
-    img {
+    & img {
         width: 100%;
-    }
-}
 
-.picFont {
-    width: 340px;
+        @include mobile {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    &:nth-child(1) {
+        padding-right: 2rem;
+
+        @include pad {
+            padding-right: 12px;
+        }
+    }
+
+    .card-body {
+        margin-left: 2rem;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    .card-title {
+        color: $white;
+        margin-bottom: 2rem;
+    }
 }
