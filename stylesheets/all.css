@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -756,7 +758,8 @@ button:focus {
 }
 
 .picCardsWrap {
-  margin-bottom: 4rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 .picCardsWrap .card {
   background-color: transparent;
@@ -883,9 +886,46 @@ button:focus {
 #products .container {
   margin-top: 4rem;
   margin-bottom: 2rem;
+  overflow: hidden;
+}
+#products h4 {
+  color: #008cd6;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #008cd6;
+          text-decoration-color: #008cd6;
+  margin: 0;
 }
 #products h5 {
-  margin-top: 2rem;
+  margin: 2rem 1.5rem;
+  color: white;
+}
+#products .card {
+  background-color: #008cd6;
+  border: 0;
+}
+#products .card:hover .arrowRight {
+  transform: scale(1.5, 1.5);
+}
+#products .card:hover img {
+  transform: translate3d(0px, -4px, 0px) scale(1.1);
+  transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+}
+#products .card-body {
+  padding: 0;
+}
+#products .card-text {
+  padding: 0 1.5rem;
+  color: white;
+}
+
+.remind {
+  padding: 1rem 2rem;
+  border: 2px solid #8DC457;
+  margin-bottom: 2rem;
+  color: #008cd6;
+}
+.remind p {
+  margin: 0;
 }
 
 .productPic {
@@ -896,4 +936,176 @@ button:focus {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.arrowRight {
+  margin: 0 auto;
+  width: 4rem;
+  height: 4rem;
+  background-color: #8DC457;
+  border-radius: 50% 50%;
+  transition-duration: 0.3s;
+  transform-origin: 50% 50%;
+  margin-bottom: 3rem;
+}
+
+.modal-header {
+  background-color: #008cd6;
+  padding: 1rem 2rem;
+}
+.modal-header h6 {
+  color: white;
+}
+
+.modal-body {
+  padding: 1rem 2rem;
+}
+.modal-body .textWrap {
+  margin: 1rem auto 2rem;
+}
+.modal-body .modalPicsWrap {
+  margin: 1rem -0.75rem;
+}
+@media (max-width: 768px) {
+  .modal-body .modalPic {
+    margin: 0.75rem auto;
+    padding: 0;
+  }
+}
+.modal-body .modalPicOne {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .modal-body .modalPicOne {
+    width: 100%;
+  }
+}
+.modal-body .modalPic img {
+  width: 100%;
+  background-size: cover;
+}
+
+.modal-footer {
+  padding: 0 2rem 2rem;
+  border-top: 0;
+}
+.modal-footer button {
+  padding: 6px 24px;
+  background-color: #8DC457;
+  border-color: transparent;
+}
+@media (max-width: 576px) {
+  .modal-footer button {
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 25.6px;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+.button {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+}
+
+.sectionTitle > h4 {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+header, section, footer, .container-fluid, col, .row {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container,
+.container-fluid,
+.container-xl {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#contact {
+  background-image: url(/stylesheets/images/cover-2.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: -10% 58vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+}
+@media (max-width: 576px) {
+  #contact {
+    background-position: -10% 75vh;
+    width: 115%;
+  }
+}
+#contact .container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+#contact h4 {
+  color: #008cd6;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #008cd6;
+          text-decoration-color: #008cd6;
+  margin: 0;
 }/*# sourceMappingURL=all.css.map */

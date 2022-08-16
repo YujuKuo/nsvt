@@ -4,10 +4,53 @@
     & .container {
         margin-top: 4rem;
         margin-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    & h4 {
+        color: $standardColor;
+        text-decoration: underline;
+        text-decoration-color: $standardColor;
+        margin: 0;
     }
 
     & h5 {
-        margin-top: 2rem;
+        margin: 2rem 1.5rem;
+        color: $white;
+    }
+
+    & .card {
+        background-color: $standardColor;
+        border: 0;
+
+        &:hover .arrowRight {
+            transform: scale(1.5, 1.5);
+        }
+    }
+
+    & .card:hover img {
+        transform: translate3d(0px, -4px, 0px) scale(1.1);
+        transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+    }
+
+    & .card-body {
+        padding: 0;
+    }
+
+    & .card-text {
+        padding: 0 1.5rem;
+        color: $white;
+    }
+}
+
+.remind {
+    padding: 1rem 2rem;
+    border: 2px solid $secondaryColor;
+    margin-bottom: 2rem;
+    color: $standardColor;
+
+    & p {
+        margin: 0;
     }
 }
 
@@ -18,5 +61,73 @@
     & img {
         width: 100%;
         object-fit: contain;
+    }
+}
+
+.arrowRight {
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: $secondaryColor;
+    border-radius: 50% 50%;
+    transition-duration: .3s;
+    transform-origin: 50% 50%;
+    margin-bottom: 3rem;
+}
+
+.modal-header {
+    background-color: $standardColor;
+    padding: 1rem 2rem;
+
+    & h6 {
+        color: white;
+    }
+}
+
+.modal-body {
+    padding: 1rem 2rem;
+
+    .textWrap {
+        margin: 1rem auto 2rem;
+    }
+
+    .modalPicsWrap {
+        margin: 1rem -0.75rem;
+    }
+
+    .modalPic {
+        @include pad {
+            margin: 0.75rem auto;
+            padding: 0;
+        }
+    }
+
+    .modalPicOne {
+        width: 50%;
+        margin: 0 auto;
+
+        @include pad {
+            width: 100%;
+        }
+    }
+
+    .modalPic img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.modal-footer {
+    padding: 0 2rem 2rem;
+    border-top: 0;
+
+    & button {
+        padding: 6px 24px;
+        background-color: $secondaryColor;
+        border-color: transparent;
+
+        @include mobile {
+            margin: 0 auto;
+        }
     }
 }
