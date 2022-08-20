@@ -309,6 +309,19 @@ section {
   padding-bottom: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: normal;
@@ -393,6 +406,19 @@ button:focus {
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
 }
 
 #navbar {
@@ -565,6 +591,19 @@ section {
   padding-bottom: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
+}
+
 header {
   position: relative;
   background-image: url("/stylesheets/images/cover-1.png");
@@ -620,6 +659,10 @@ header > div {
   width: 30vw;
   position: absolute;
   top: 0;
+  -webkit-animation: fadeInBottomLeft;
+          animation: fadeInBottomLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 @media (max-width: 1024px) {
   .plane {
@@ -725,6 +768,19 @@ button:focus {
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
 }
 
 #about {
@@ -903,6 +959,19 @@ button:focus {
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
 }
 
 #products .container {
@@ -1109,6 +1178,19 @@ section {
   padding-bottom: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
+}
+
 #contact {
   background-image: url("/stylesheets/images/cover-3.svg");
   background-attachment: cover;
@@ -1249,6 +1331,19 @@ button:focus {
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8DC457;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008cd6;
+  border-radius: 50px;
 }
 
 footer {

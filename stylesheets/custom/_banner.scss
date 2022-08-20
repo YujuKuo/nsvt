@@ -59,6 +59,8 @@ header {
     width: 30vw;
     position: absolute;
     top: 0;
+    animation: fadeInBottomLeft;
+    animation-duration: 3s;
 
     @include padPro {
         width: 40vw;

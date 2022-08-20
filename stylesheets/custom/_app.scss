@@ -144,3 +144,16 @@ section {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $secondaryColor;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $standardColor;
+    border-radius: 50px;
+}
