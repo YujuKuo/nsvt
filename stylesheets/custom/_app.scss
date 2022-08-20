@@ -117,7 +117,7 @@ $mobileBtnSize: 42px;
 }
 
 header, section, footer, .container-fluid, col, .row {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 0;
     margin: 0;
 }
@@ -138,4 +138,9 @@ button {
 // margin space
 .row {
     margin: 0;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
