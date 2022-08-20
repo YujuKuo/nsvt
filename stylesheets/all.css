@@ -10,6 +10,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -1161,4 +1163,100 @@ section {
   #contact p {
     padding-left: 0.75rem;
   }
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 25.6px;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+.button {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+}
+
+.sectionTitle > h4 {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+header, section, footer, .container-fluid, col, .row {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container,
+.container-fluid,
+.container-xl {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: #008cd6;
+}
+footer p {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
 }/*# sourceMappingURL=all.css.map */

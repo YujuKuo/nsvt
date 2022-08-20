@@ -1,0 +1,12 @@
+@import "_app.scss";
+
+footer {
+    background-color: $standardColor;
+
+    & p {
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: $white;
+    }
+}
