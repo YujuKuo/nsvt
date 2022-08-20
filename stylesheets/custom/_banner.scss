@@ -2,8 +2,7 @@
 
 header {
     position: relative;
-
-    // background-image: url("/stylesheets/images/cover-1.png");
+    background-image: url("/stylesheets/images/cover1.png");
     background-position: bottom center;
     background-size: cover;
     height: 625px;
@@ -30,6 +29,7 @@ header {
 
 .bannerFontWrap {
     padding-right: 1rem;
+    z-index: 1;
 
     @include mobile {
         margin-right: 1rem !important;
